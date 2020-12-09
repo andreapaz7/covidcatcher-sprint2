@@ -186,7 +186,13 @@ Deployed on [Heroku](https://www.heroku.com/)
 ### Andrea
 - Front end for Login page 
 - Front end for Statistics page
-- Helped with mocked tests for app.py
+- Helped with mocked tests for app.py 
+- Helped with mocked tests for site.py
+- Created bar graph of counties on Statistics page
+- Made dropdown menu
+- Set up continuous deployment to Heroku and testing on Circle Ci
+- Create About page
+
 
 ### Tim
 - Create navigation bar with links to the home, articles, faq, statistics and questionnaire page
