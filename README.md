@@ -40,6 +40,14 @@ npm install socket.io-client --save
 ### Sign up for the required API keys
 - To use the Map API and Search Testing Site location, visit https://developer.here.com/ and sign up.
 - After you signed up, logged in, click Freemium and you will see Javascript and REST.  Click Create API Keys for both and save
+- To use the News API, visit https://newsapi.org/ and sign up
+- After signing up, get the API key and save them to later place in api-keys.env file
+- To add email functionality to questionnaire results, visit https://app.mailgun.com/ and sign up for a free account
+- After signing up, get the API key and save them to later place in api-keys.env file
+- Also verify your own email for testing purposes (For full functionality you wlil need a paid account)
+- Then navigate to line 117 on app.py and make the necessary to the sender information
+
+- Now that all apis are set up,
 - Create api-keys.env in your workspace by
 ```
 touch api-keys.env
@@ -49,6 +57,9 @@ c9 api-keys.env
 ```
 export SITE_API_KEY='YOUR REST API KEY'
 export MAP_API_KEY='-YOUR JAVASCRIPT API KEY'
+export MAIL_API_KEY='YOUR MAIL GUN API KEY'
+export NEWS_API_KEY='YOUR NEWS API KEY'
+
 ```
 ### Get PSQL to work with Python
 - To update yum (enter 'yes' to all promps) `sudo yum update`
@@ -164,6 +175,13 @@ Deployed on [Heroku](https://www.heroku.com/)
 - Created Covid Stat API functions to get covid stats of certain states using corona.lmao.ninja
 - Created Covid Stat API functions to get covid stats of certain counties using corona.lmao.ninja
 - Created unit tests in api_unit_tests.py for all api function calls
+- Improved FAQ Page and Functionality
+- Added Colors to Covid State Stat API calls
+- Restyled all pages and navigations bar
+- Integrated Oauth into questionnaire page
+- Integreate Email API into questionnaire page
+- Added death charts for counties on Statistic page
+- Added github pictures to About page
 
 ### Andrea
 - Front end for Login page 
