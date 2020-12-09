@@ -194,7 +194,12 @@ Deployed on [Heroku](https://www.heroku.com/)
 - Route user to a "does not exist" page when user redirects themself to an nonexistent page
 - Front end for FAQ page + CSS styling
 - Front end for Article page + CSS styling
-- Heroku deployment 
+- Heroku deployment for MVP sprint
+- Implented USA map on home page
+- Color coded each state on the USA map based on the daily updated number of COVID cases
+- Created map key for the USA map
+- Made dropdown menu on home page redirect user to statistics page
+- Update statistics page based on the selected state from the dropdown menu
 
 # Pending work
 - None
