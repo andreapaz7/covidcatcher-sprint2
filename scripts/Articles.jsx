@@ -33,7 +33,7 @@ export function Articles() {
                 <img className="article-image" src={image[index]} alt="article" />
                 <a className="article-link" target="_blank" rel="noreferrer" href={url[index]}>
                   Read Article at
-                  {source[index]}
+                  {' ' + source[index]}
                 </a>
               </div>
               <div className="article-text">
@@ -42,7 +42,7 @@ export function Articles() {
                 <p className="article-source">
                   <i>
                     Supplied by
-                    {source[index]}
+                    {' ' + source[index]}
                   </i>
                 </p>
               </div>
