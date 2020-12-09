@@ -167,6 +167,8 @@ Deployed on [Heroku](https://www.heroku.com/)
 - Backend sockets for FAQ, Article, Login and Stats Page
 - Created unmocked tests for app.py
 - Used APIs defined by Madison, to send information to front end pages
+- Created Map and Map page
+- Created API for testing sites and location for map
 
 ### Madison
 - Created News API functions to get news articles using News-API
