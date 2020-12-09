@@ -1,12 +1,12 @@
+/* eslint-disable quote-props,no-use-before-define,react/button-has-type */
 import React from 'react';
 import * as Survey from 'survey-react';
 import { useHistory } from 'react-router-dom';
 import { Socket } from './Socket';
 
 export function Quest() {
-  
   const history = useHistory();
-  
+
   function emailResults() {
     Socket.emit('email results', {
       'results': model.renderedCompletedHtml,
@@ -14,7 +14,7 @@ export function Quest() {
     history.push('/questionnaire-start');
     return false;
   }
-  
+
   Survey.StylesManager.applyTheme('modern');
   const surveyJSON = {
     title: 'Covid Questionnaire',
@@ -136,7 +136,7 @@ export function Quest() {
     <div className="survey-container">
       <link href="https://surveyjs.azureedge.net/1.8.14/modern.css" type="text/css" rel="stylesheet" />
       <script src="https://surveyjs.azureedge.net/1.8.14/survey.react.min.js" />
-      <Survey.Survey model={model}/>
+      <Survey.Survey model={model} />
       <button onClick={emailResults} className="start-quest-button" id="emailresultbtn" value="Email Results">
         Email Results
       </button>

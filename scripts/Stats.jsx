@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars,no-use-before-define,jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import {
   BarChart, Bar, ReferenceLine, XAxis, YAxis, CartesianGrid, Tooltip, Legend,

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-unescaped-entities, no-unused-vars */
 import * as React from 'react';
 import { useHistory } from 'react-router-dom';
 
