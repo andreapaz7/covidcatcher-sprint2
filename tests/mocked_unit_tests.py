@@ -30,7 +30,8 @@ class MockedItem:
 class MockedRequest:
     """This class mocks request.sid"""
     def __init__(self):
-        self.sid = ""
+        self.sid = 10
+
 class MockedDB:
     """ This class defines a mocked db object"""
     def __init__(self, session=""):
@@ -126,6 +127,7 @@ class FaqListTest(unittest.TestCase):
                 expected = test[EXPECTED]
                 self.assertEqual(expected, result)
 '''
+'''
 class PushStatDataTest(unittest.TestCase):
     """ This class contains the tests and paramaters to test """
     def setUp(self):
@@ -152,7 +154,7 @@ class PushStatDataTest(unittest.TestCase):
                     result = push_stat_data(test[INPUT])
                     expected = test[EXPECTED]
                     self.assertEqual(expected, result)
-
+'''
 class ArticleListTest(unittest.TestCase):
     """ This class contains the tests and paramaters to test """
     def setUp(self):
@@ -176,6 +178,7 @@ class ArticleListTest(unittest.TestCase):
                 result = articleList()
                 expected = test[EXPECTED]
                 self.assertEqual(expected, result)
+'''
 class SearchTest(unittest.TestCase):
     """ This class contains the tests and paramaters to test """
     def setUp(self):
@@ -192,7 +195,7 @@ class SearchTest(unittest.TestCase):
         sites.append(MockedSite)
         return sites
 
-    def mocked_search_user(self, a=0):
+    def mocked_search_user(self, arg_x=0):
         """ mocked searching() """
         search = []
         search.append(60)
@@ -209,7 +212,7 @@ class SearchTest(unittest.TestCase):
                     result = searching(test[INPUT])
                     expected = test[EXPECTED]
                     self.assertEqual(expected, result)
-                
+'''
 class EmitTest(unittest.TestCase):
     """unit test for emit_all_users"""
     def setUp(self):
